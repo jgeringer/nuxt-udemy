@@ -1,3 +1,6 @@
+@import 'core/variables.scss';
+// @import 'custom.scss';
+
 html, body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -21,6 +24,8 @@ html {
 box-sizing: border-box;
 margin: 0;
 }
+
+.intro {border-bottom: 2px solid orangered}
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;

@@ -9,6 +9,21 @@
     </div>
 
     <div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+      </div>
+    </div>
+
       <h4 class="title3">Recipes</h4>      
       <span>
         <h3>Tutorials:</h3>

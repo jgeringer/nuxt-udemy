@@ -34,7 +34,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~/assets/styles/main.css'
+    '@/assets/scss/main.scss',
+    '@/assets/scss/custom.scss'
   ],
 
   /*
@@ -49,8 +50,22 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/axios'
+    [
+      '@nuxtjs/style-resources'
+    ],
+    '@nuxtjs/axios',
+    'bootstrap-vue/nuxt'
   ],
+
+  bootstrapVue: {
+    bootstrapCSS: false, // Or `css: false`
+    bootstrapVueCSS: false // Or `bvCSS: false`
+  },
+
+  styleResources: {
+    sass: ['assets/scss/core/variables.scss']
+   },
+
   axios: {
     baseURL: process.env.BASE_URL || 'https://nuxt-blog-9132f.firebaseio.com',
     credentials: false

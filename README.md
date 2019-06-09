@@ -43,3 +43,6 @@ And that's already all that's to it!
 ```
 
 ###
+
+- Upgrade to 3
+- Add packages

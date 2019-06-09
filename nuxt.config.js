@@ -43,7 +43,6 @@ module.exports = {
   plugins: [
     '~plugins/date-filter.js',
     '~plugins/core-components.js'
-
   ],
 
   /*
@@ -75,7 +74,7 @@ module.exports = {
   router: {
     linkActiveClass: 'is-active'
   },
-  transition: {
+  pageTransition: {
     name: 'fade',
     mode: 'out-in'
   },

@@ -32,23 +32,6 @@
           <li><a href="https://www.udemy.com/nuxtjs-vuejs-on-steroids/">Nuxt</a></li>
           <li><a href="https://www.youtube.com/watch?v=nteDXuqBfn0">Youtube</a></li>
         </ul>
-        <hr />
-        <h4>Things to work on next:</h4>
-        <ol>
-          <li>Finish udemy course on vue to learn more on filtering and vuex</li>
-          <li>Have nav built dynamically (mock)</li>
-          <li>Wire up to contentful
-            <ul>
-              <li>Setup environment variables</li>
-              <li>Nav</li>
-              <li>About</li>
-              <li>Listing</li>
-              <li>Detail</li>
-            </ul>
-          </li>
-          <li>PWA</li>
-          <li>Login?</li>
-        </ol>
       </span>
     </div>
   </section>

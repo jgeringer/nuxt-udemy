@@ -6,43 +6,36 @@
         <h1>Get the latest tech news!</h1>
       </section>
       <PostList :posts="loadedPosts" />
+      <Weather />
     </div>
 
     <div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          One of three columns
-        </div>
-        <div class="col-sm">
-          One of three columns
-        </div>
-        <div class="col-sm">
-          One of three columns
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
         </div>
       </div>
-    </div>
-
-      <h4 class="title3">Recipes</h4>      
-      <span>
-        <h3>Tutorials:</h3>
-        <ul>
-          <li><a href="https://www.udemy.com/vuejs-jump-start-with-nuxtjs-firebase/">Vue/Nuxt/Firebase</a></li>
-          <li><a href="https://www.udemy.com/nuxtjs-vuejs-on-steroids/">Nuxt</a></li>
-          <li><a href="https://www.youtube.com/watch?v=nteDXuqBfn0">Youtube</a></li>
-        </ul>
-      </span>
+      
     </div>
   </section>
 </template>
 
 <script>
 import PostList from '@/components/Posts/PostList'
+import Weather from '@/components/Weather'
 
 export default {
   components: {
-    PostList
+    PostList,
+    Weather
   },
   computed: {
     loadedPosts() {

@@ -24,7 +24,7 @@ export default {
     methods: {
         getWeather() {
             console.log(`get weather: ${this.weatherInput}`)
-            fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.weatherInput}&units=imperial&appid=eb0a4ddf6567cd991f2f7b64ad53d8c7`)
+            fetch(`//api.openweathermap.org/data/2.5/weather?q=${this.weatherInput}&units=imperial&appid=eb0a4ddf6567cd991f2f7b64ad53d8c7`)
                 .then((response) => {
                     return response.json()
                 })

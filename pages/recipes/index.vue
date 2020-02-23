@@ -31,9 +31,9 @@ export default {
                         },
                         {
                             id: '2',
-                            title: 'Good Food',
-                            thumbnail: 'https://www.drdavidludwig.com/wp-content/uploads/2017/01/1-RIS_6IbCLYv1X3bzYW1lmA.jpeg',
-                            previewText: 'This is amazing food!'
+                            title: 'Ramen',
+                            thumbnail: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190208-delish-ramen-horizontal-093-1550096715.jpg?crop=1xw:0.9995002498750624xh;center,top&resize=480:*',
+                            previewText: 'A very good ramen recipe'
                         }
                     ]
                 })

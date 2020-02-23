@@ -51,7 +51,6 @@ export default {
   border: 1px solid #ccc;
   box-shadow: 0 2px 2px #ccc;
   background-color: white;
-  width: 90%;
 }
 
 a {
@@ -61,8 +60,7 @@ a {
 
 @media (min-width: 850px) {
   .post-preview {
-    width: 400px;
-    margin: 10px;
+    width: 100%;
   }
 }
 

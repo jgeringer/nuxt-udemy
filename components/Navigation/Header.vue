@@ -1,14 +1,15 @@
 <template>
 <div class="header-container">
   <header class="the-header">
-    <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
+    <SideNavToggle @toggle="$emit('sidenavToggle')" />
     <div class="logo">
-      <nuxt-link to="/">WD BLOG</nuxt-link>
+      <nuxt-link to="/">BLOG</nuxt-link>
     </div>
     <div class="spacer"></div>
     <div class="navigation-items">
       <ul class="nav-list">
-        <li class="nav-item"><nuxt-link to="/posts">Blog</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/recipes">Recipes</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/posts">Articles</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/admin">Admin</nuxt-link></li>
       </ul>
@@ -18,12 +19,12 @@
 </template>
 
 <script>
-import TheSideNavToggle from "@/components/Navigation/TheSideNavToggle";
+import SideNavToggle from "@/components/Navigation/SideNavToggle";
 
 export default {
-  name: "TheHeader",
+  name: "Header",
   components: {
-    TheSideNavToggle
+    SideNavToggle
   }
 };
 </script>
@@ -41,7 +42,8 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(111,111,111,.7);
+  background: rgb(0,185,255);
+  background: linear-gradient(117deg, rgba(0,185,255,.98) 0%, rgba(68,19,191,.98) 100%);
   z-index: 100;
   box-sizing: border-box;
   padding: 0 20px;

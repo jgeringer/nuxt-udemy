@@ -1,9 +1,7 @@
 <template>
     <div class="home-page">
-        <section class="intro">
-            <h1>Get the latest tech news!</h1>
-        </section>
-        <section class="posts-list">
+        <h1 class="intro mb-3">Latest Articles</h1>
+        <section class="posts-list mb-3">
             <PostPreview 
             v-for="post in posts"
             :key="post.id"
@@ -35,13 +33,13 @@ export default {
 }
 </script>
 
-<style scoped>    
+<style scoped>
+    .intro {
+        margin-top: 2rem;
+    }
     .posts-list {
-    display: flex;
-    padding: 20px;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
     }
 </style>

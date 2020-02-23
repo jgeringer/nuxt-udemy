@@ -1,15 +1,18 @@
 <template>
     <div class="single-post-page">
-        <section class="post">
+        <article class="post">
             <h1 class="post-title">{{ loadedPost.title }}</h1>
             <div class="post-details">
                 <div class="post-detail">Last updated on {{loadedPost.updatedDate | date}}</div>
                 <div class="post-detail">Written by {{loadedPost.author}}</div>
-            </div>
+            </div>      
+          <div
+            class="post-thumbnail"
+            :style="{backgroundImage: 'url(' + loadedPost.thumbnail + ')'}"></div>
             <p class="post-content">{{loadedPost.content}}</p>
-        </section>
+        </article>
         <section class="post-feedback">
-            <p>Let me know what you think about hte post, send a mail to <a href="mailto:feedback@awesome.com">feedback</a></p>
+            <p>Let me know what you think about the post, send a mail to <a href="mailto:feedback@awesome.com">feedback</a></p>
         </section>
     </div>
 </template>
@@ -90,5 +93,12 @@ export default {
 .post-feedback a:hover,
 .post-feedback a:active {
   color: salmon;
+}
+.post-thumbnail {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 </style>

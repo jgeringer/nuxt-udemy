@@ -1,22 +1,25 @@
 <template>
   <div>
-    <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
-    <TheSidenav
+    <Header @sidenavToggle="displaySidenav = !displaySidenav" />
+    <Sidenav
       :show="displaySidenav"
       @close="displaySidenav = false" />
     <nuxt/>
+    <Footer />
   </div>
 </template>
 
 <script>
-  import TheHeader from '@/components/Navigation/TheHeader'
-  import TheSidenav from '@/components/Navigation/TheSidenav'
+  import Header from '@/components/Navigation/Header'
+  import Sidenav from '@/components/Navigation/Sidenav'
+  import Footer from '@/components/Navigation/Footer'
 
   export default {
     // middleware: 'log',
     components: {
-      TheHeader,
-      TheSidenav
+      Header,
+      Sidenav,
+      Footer
     },
     data() {
       return {

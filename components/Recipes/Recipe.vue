@@ -21,9 +21,8 @@ export default {
     }
     .recipe {
         box-sizing: border-box;
-        width: 280px;
+        width: 100%;
         padding: 8px;
-        margin: 1rem;
         border: 1px solid #ccc;
         box-shadow: 0 0 10px gray;
     }

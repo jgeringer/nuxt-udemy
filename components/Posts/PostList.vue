@@ -1,5 +1,5 @@
 <template>
-    <div class="home-page">
+    <section>
         <h1 class="intro mb-3">Latest Articles</h1>
         <section class="posts-list mb-3">
             <PostPreview 
@@ -11,7 +11,7 @@
             :title="post.title"
             :previewText="post.previewText" />
         </section>      
-    </div>
+    </section>
 </template>
 
 <script>

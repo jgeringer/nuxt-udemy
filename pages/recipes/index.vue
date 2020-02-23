@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Recipe from '@/components/Recipe'
+import Recipe from '@/components/Recipes/Recipe'
 
 export default {
     components: {
@@ -45,10 +45,8 @@ export default {
 
 <style scoped>
 .recipes {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
 }
-    
 </style>
